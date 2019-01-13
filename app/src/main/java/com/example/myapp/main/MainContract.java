@@ -8,11 +8,9 @@ package com.example.myapp.main;
 public interface MainContract {
 
     interface MvpView {
-
     }
 
     interface Presenter {
-
     }
 
 }
