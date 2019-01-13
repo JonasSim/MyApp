@@ -22,12 +22,14 @@ public class MainPresenterTest {
     public void setUp() throws Exception {
         MockitoAnnotations.initMocks(this);
         mainPresenter = new MainPresenter(mvpView);
+
     }
 
     @Test
     public void handleSignInButtonClick() {
         mainPresenter.handleSignInButtonClick();
         verify(mvpView).showSignInScreen();
+
     }
 
     @Test
@@ -35,4 +37,5 @@ public class MainPresenterTest {
         mainPresenter.handleSignUpButtonClick();
         verify(mvpView).showSignUpScreen();
     }
+
 }
